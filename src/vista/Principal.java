@@ -4,6 +4,10 @@
  */
 package vista;
 
+import java.util.ArrayList;
+import java.util.List;
+import modelo.Vehiculo;
+
 /**
  *
  * @author Jairo F
@@ -15,6 +19,26 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        List<Vehiculo> listVehiculos = new ArrayList();
+        
+        printListVehiculo(listVehiculos);
+    }
+    
+    public static void infoVehiculo(Vehiculo v){
+        
+        System.out.println(v);
+        System.out.println("-------------------------------");
+    
+    }
+    
+    public static void printListVehiculo(List<Vehiculo> list){
+        System.out.println("** LISTA DE VEHICULOS REGISTRADOS ** ");
+        System.out.println("-------------------------------------");
+        for(Vehiculo v: list){
+            infoVehiculo(v);
+        }
+    
     }
     
 }
