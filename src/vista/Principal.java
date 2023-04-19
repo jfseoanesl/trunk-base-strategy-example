@@ -6,7 +6,7 @@ package vista;
 
 import java.util.ArrayList;
 import java.util.List;
-import modelo.Vehiculo;
+import modelo.*;
 
 /**
  *
@@ -21,6 +21,9 @@ public class Principal {
         // TODO code application logic here
         
         List<Vehiculo> listVehiculos = new ArrayList();
+        listVehiculos.add(new Autobus("ABC-123", "Toyota", 2010));
+        listVehiculos.add(new Autobus("DEF-345", "Wolsvagen", 2015));
+        listVehiculos.add(new Tractor("HIJ-678", "GMC", 2012));
         
         printListVehiculo(listVehiculos);
     }
